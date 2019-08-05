@@ -5,6 +5,13 @@ const booksLoaded = (newBookds) => {
     };
 };
 
+const bookRequested = () => {
+    return {
+        type: 'BOOKS_REQUESTED'
+    };
+};
+
 export {
-    booksLoaded
+    booksLoaded,
+    bookRequested
 };
