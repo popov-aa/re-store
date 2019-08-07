@@ -41,7 +41,7 @@ class BookListContainer extends React.Component {
     }
 }
 
-const mapStateToProps = ({books, loading, error}) => { return {books, loading, error} }
+const mapStateToProps = ({bookList: {books, loading, error}}) => { return {books, loading, error} }
 const mapDispatchToProps = (dispatch, {bookstoreService}) => {
     return {
         fetchBooks: fetchBooks(bookstoreService, dispatch),
