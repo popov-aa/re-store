@@ -34,7 +34,23 @@ const bookAddedToCart = (bookId) => {
     };
 };
 
+const bookRemovedFromCart = (bookId) => {
+    return {
+        type: 'BOOK_REMOVED_FROM_CART',
+        payload: bookId
+    };
+};
+
+const allBookRemovedFromCart = (bookId) => {
+    return {
+        type: 'ALL_BOOKS_REMOVED_FROM_CART',
+        payload: bookId
+    };
+};
+
 export {
     fetchBooks,
-    bookAddedToCart
+    bookAddedToCart,
+    bookRemovedFromCart,
+    allBookRemovedFromCart
 };
